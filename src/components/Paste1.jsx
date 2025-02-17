@@ -76,7 +76,7 @@ const Paste1 = () => {
                                 // whole-single-paste-slab
                                 <div className='dark-change transition-colors duration-300 dark:hover:bg-[#1a1a1a] border-2 border-[rgba(128,121,121,0.5)] rounded flex  gap-y-5 justify-between items-center p-3 max-sm:flex-col max-sm:items-start' key={paste?._id}>
                                     {/* left part */}
-                                    <div className='flex flex-col gap-y-2 w-[50%]'>
+                                    <div className='flex flex-col gap-y-2 w-[50%] max-sm:w-[100%]'>
                                         {/* Title section  */}
                                     <div className='text-3xl font-semibold' >
                                         {paste.title}
