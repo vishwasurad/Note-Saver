@@ -141,7 +141,7 @@ const Home = () => {
         </div>
       </div>
         {/* Textarea */}
-      <textarea className=' w-full p-3   group-hover:dark-change dark:focus:border-[#646cff] outline-none focus:border-black border-2 border-[rgba(128,121,121,0.5)] rounded-b-md rounded-t-none dark:bg-[#1a1a1a]' style={{ caretColor: "#000",}} name="" id="" placeholder='Write Your Content Here....' value={value} rows={20} onChange={(e)=>{setValue(e.target.value)}}></textarea>
+      <textarea className=' w-full p-3   group-hover:dark-change dark:focus:border-[#646cff] outline-none focus:border-black border-2 border-[rgba(128,121,121,0.5)] rounded-b-md rounded-t-none dark:bg-[#1a1a1a] caret-black dark:caret-white'  name="" id="" placeholder='Write Your Content Here....' value={value} rows={20} onChange={(e)=>{setValue(e.target.value)}}></textarea>
     </div>
      </div>
    
