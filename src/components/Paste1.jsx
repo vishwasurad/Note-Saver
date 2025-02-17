@@ -65,7 +65,7 @@ const Paste1 = () => {
             </div>
                 {/* all paste section */}
             <div className=' w-full flex flex-col  rounded-md border-2  border-[rgba(128,121,121,0.5)]  '>
-               <h2 className='text-4xl font-bold bg-red- py-6 px-7 border-b-2  border-[rgba(128,121,121,0.5)] flex flex-row justify-start items-center'>All Pastes</h2> 
+               <h2 className='text-4xl font-bold bg-red- py-6 px-7 border-b-2  border-[rgba(128,121,121,0.5)] flex flex-row justify-start items-center'>All Notes</h2> 
                            {/* pastes-slab-box */}
                 {/* section that contain paste list */}
             <div className='flex flex-col gap-y-5  my-5 mx-5  border-[rgba(128,121,121,0.5)]'>

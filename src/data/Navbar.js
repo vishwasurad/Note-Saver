@@ -7,6 +7,7 @@ export const NavbarData=[
     },
     {
        path:"/pastes",
-       title:"Pastes"
+       title:"Notes"
+      //  title:"Pastes"
     },
 ];

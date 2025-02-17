@@ -121,8 +121,8 @@ const Home = () => {
      <div className='w-full flex flex-row justify-between items-center gap-x-4 '>
       {/* Dynamic width based on whether pasteId is present */}
       <input className={`${pasteId?"w-[80%]":"w-[87%]"} dark-change dark:focus:border-[#646cff] outline-none focus:border-black p-2 rounded-md   border-2 border-[rgba(128,121,121,0.5)] dark:bg-[#1a1a1a]`} placeholder="Title" type="text"  value={title} onChange={(e)=>{setTitle(e.target.value)}} />
-      <button className='btn px-5 py-2.5  rounded-lg bg-blue-600 hover:bg-blue-700  text-white font-medium ' onClick={createPaste}> {pasteId?"Update Note":"Create Note" }</button>
-      {pasteId && <button className='btn px-5 py-2.5 rounded-md font-medium text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:ring-blue-300' onClick={resetPaste}><PlusCircle size={20}/></button>}
+      <button className='btn px-5 py-2.5  rounded-lg bg-blue-600 hover:bg-blue-700  text-white font-medium max-sm:text-base max-sm:px-3 max-sm:py-1.6 max-sm:w-[140px]   ' onClick={createPaste}> {pasteId?"Update Note":"Create Note" }</button>
+      {pasteId && <button className='btn px-4 py-2 rounded-md font-medium text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 ' onClick={resetPaste}><PlusCircle size={20}/></button>}
     </div>
      {/* it contains the whole text area */}
     <div className='group  textbox-content w-full flex flex-col rounded items-start border-[0px]  bg-opacity-10  backdrop-blur-2xl'>
