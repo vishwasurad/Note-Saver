@@ -118,10 +118,10 @@ const Home = () => {
       {/* it is second outer covering and it is used to set everyone in column */}
    <div className='flex flex-col gap-y-6 items-start'>
     {/* it contains the title and create paste btn section */}
-     <div className='w-full flex flex-row justify-between items-center gap-x-4 '>
+     <div className='w-full flex flex-row justify-between items-center gap-x-4 max-sm:gap-x-3'>
       {/* Dynamic width based on whether pasteId is present */}
       <input className={`${pasteId?"w-[80%]":"w-[87%]"} dark-change dark:focus:border-[#646cff] outline-none focus:border-black p-2 rounded-md   border-2 border-[rgba(128,121,121,0.5)] dark:bg-[#1a1a1a]`} placeholder="Title" type="text"  value={title} onChange={(e)=>{setTitle(e.target.value)}} />
-      <button className='btn px-5 py-2.5  rounded-lg bg-blue-600 hover:bg-blue-700  text-white font-medium max-sm:text-base max-sm:px-3 max-sm:py-1.6 max-sm:w-[140px]   ' onClick={createPaste}> {pasteId?"Update Note":"Create Note" }</button>
+      <button className='btn px-5 py-2.5  rounded-lg bg-blue-600 hover:bg-blue-700  text-white font-semibold max-sm:text-sm max-sm:px-[0.695rem] max-sm:py-[0.510rem] max-sm:w-[230px] md:px-3 md:py-[0.475rem] max-lg:w-[150px] max-lg:px-[0.875rem] lg:px-5 lg:py-2.5   ' onClick={createPaste}> {pasteId?"Update Note":"Create Note" }</button>
       {pasteId && <button className='btn px-4 py-2 rounded-md font-medium text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 ' onClick={resetPaste}><PlusCircle size={20}/></button>}
     </div>
      {/* it contains the whole text area */}
