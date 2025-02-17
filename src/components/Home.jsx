@@ -120,8 +120,8 @@ const Home = () => {
     {/* it contains the title and create paste btn section */}
      <div className='w-full flex flex-row justify-between items-center gap-x-4 '>
       {/* Dynamic width based on whether pasteId is present */}
-      <input className={`${pasteId?"w-[80%]":"w-[84%]"} dark-change dark:focus:border-[#646cff] outline-none focus:border-black p-2 rounded-md   border-2 border-[rgba(128,121,121,0.5)] dark:bg-[#1a1a1a]`} placeholder="Title" type="text"  value={title} onChange={(e)=>{setTitle(e.target.value)}} />
-      <button className='btn px-5 py-2.5  rounded-lg bg-blue-600 hover:bg-blue-700  text-white font-medium ' onClick={createPaste}> {pasteId?"Update Paste":"Create My Paste" }</button>
+      <input className={`${pasteId?"w-[80%]":"w-[87%]"} dark-change dark:focus:border-[#646cff] outline-none focus:border-black p-2 rounded-md   border-2 border-[rgba(128,121,121,0.5)] dark:bg-[#1a1a1a]`} placeholder="Title" type="text"  value={title} onChange={(e)=>{setTitle(e.target.value)}} />
+      <button className='btn px-5 py-2.5  rounded-lg bg-blue-600 hover:bg-blue-700  text-white font-medium ' onClick={createPaste}> {pasteId?"Update Note":"Create Note" }</button>
       {pasteId && <button className='btn px-5 py-2.5 rounded-md font-medium text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:ring-blue-300' onClick={resetPaste}><PlusCircle size={20}/></button>}
     </div>
      {/* it contains the whole text area */}
